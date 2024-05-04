@@ -20,7 +20,7 @@
                 
                     <div class="dropdown-content">
                         
-                        <a href="#">Booking</a>
+                        <a href="Booking.php">Booking</a>
                         <a href="#">Our Team</a>
                         <a href="#">Testimonial</a>
 

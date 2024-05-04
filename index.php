@@ -32,7 +32,7 @@
             
                         
              <div class="rowslider">
-                <img src="Images/slider1.jpg" width="100%"  height="60%"   style="margin-top: 5px;" alt="slider1.jpg" id="slideimage">
+                <img src="Images/photo1.jpg" width="100%"  height="60%"   style="margin-top: 5px;" alt="slider1.jpg" id="slideimage">
             </div> 
 <br><br>
 
