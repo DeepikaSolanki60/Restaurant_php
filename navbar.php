@@ -3,7 +3,6 @@
              <!------------------ Menu Bar ---------------------->
          
              <div class="row1">
-                
                 <div class="menuheader">
 
                 <a href="index.php">Home</a>
@@ -21,7 +20,7 @@
                     <div class="dropdown-content">
                         
                         <a href="Booking.php">Booking</a>
-                        <a href="#">Our Team</a>
+                        <a href="ourTime.php">Our Team</a>
                         <a href="#">Testimonial</a>
 
                         
@@ -33,6 +32,10 @@
 
                          <a href="login.php">Login</a>
 
+</div>
+<!-- ----socail media------------ -->
+<div>
+      
 </div>
 </div>
        

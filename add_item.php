@@ -1,33 +1,33 @@
 <?php include 'connection.php'; ?>
 <?php
-  $target_dir = 'uploads/';
-  $target_file = $target_dir . basename($_FILES['fileToUpload']["name"]);
-  $uploadOk = 1;
-  $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-    if (isset($_POST['submit_btn'])) 
-    {
-      $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-      $itemName = $_POST['itemName'];
-      $price = $_POST['price'];
-      $quantity = $_POST['quantity'];
-      // $file = $_FILES['fileToUpload'];
-      $query = "INSERT INTO add_item(itemName,price,quantity,item_photo) VALUES('$itemName','$price',' $quantity','$target_file')";
+$target_dir = 'uploads/';
+$target_file = $target_dir.basename($_FILES['fileToUpload']['name']);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+if (isset($_POST['submit_btn'])) {
+  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+  $itemName = $_POST['itemName'];
+  $price = $_POST['price'];
+  $quantity = $_POST['quantity'];
+  // $file = $_FILES['fileToUpload'];
+  $query = "INSERT INTO add_item(itemName,price,quantity,item_photo) VALUES('$itemName','$price',' $quantity','$target_file')";
 
-      $data = mysqli_query($con, $query);
-          if ($data) {
-            ?>
-            <script type="text/javascript">
-              alert("Data saved Successfully ");
-            </script>
-            <?php
-          } else {
-            ?>
-            <script type="text/javascript">
-              echo "please try again ";
-            </script>
-            <?php
-          }
-    }
+  $data = mysqli_query($con, $query);
+  if ($data) {
+    ?>z
+    <script type="text/javascript">
+      alert("Data saved Successfully ");
+      window.open("http://localhost/Restaurant/deshboard.php", "_self");
+    </script>
+    <?php
+  } else {
+    ?>
+    <script type="text/javascript">
+                  echo "please try again ";
+    </script>
+    <?php
+  }
+}
 ?>
 
 
@@ -57,7 +57,7 @@
         <span>Item Photo</span>
         <input type="file" name="fileToUpload" required><br>
 
-        <button class="button" type="submit" name="submit_btn"> Submit</button>
+        <button class="button" type="submit" name="submit_btn">Submit</button>
 
     </form>
   </div>

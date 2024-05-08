@@ -27,22 +27,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css/login.css" />
     <title>Login</title>
 </head>
 <body>
-    <h2><u>Login<u></h2>
+<div class="container">
+    <h2>Login</h2>
     <form action="Login.php" method="post">
-        <div class="container">
+        
             <label>
                 <input type="text" placeholder="Enter you Name or Gmail " name=
                 "userName"/><br>
                 <input  type="password" placeholder="password" name="password"/><br/>
                 <button type="submit" name="submit">login</button><br>
             </label>
-            <label>
-                <input type="checkbox" checked="checked" name ="remender">Remender me
-                </label>
-        </div>
+            
+        
     </form>
+    </div>
 </body>
 </html>

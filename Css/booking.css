@@ -1,0 +1,64 @@
+body {
+    background-color: #b4c2d9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Main_container {
+    width: 360px;
+    height: 380px;
+    border-radius: 3px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label {
+
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input {
+    width: 100%;
+    padding: 7px;
+    margin: 4px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+form select {
+    width: 100%;
+    padding: 7px;
+    margin: 4px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+button {
+    width: 120px;
+    height: 35px;
+    border: none;
+    background-color: #49c1a2;
+    color: rgb(5, 5, 5);
+    font-size: 18px;
+    margin-left: 50px;
+}
