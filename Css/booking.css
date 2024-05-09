@@ -1,5 +1,5 @@
 body {
-    background-color: #b4c2d9;
+    background-color: #1e3a68;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,7 +39,7 @@ form input {
     padding: 7px;
     margin: 4px;
     border: none;
-    border: 1px solid gray;
+    border: 1px solid rgb(9, 9, 9);
     border-radius: 6px;
     outline: none;
 }
@@ -48,7 +48,7 @@ form select {
     padding: 7px;
     margin: 4px;
     border: none;
-    border: 1px solid gray;
+    border: 1px solid rgb(12, 11, 11);
     border-radius: 6px;
     outline: none;
 }
@@ -57,7 +57,7 @@ button {
     width: 120px;
     height: 35px;
     border: none;
-    background-color: #49c1a2;
+    background-color: #ffd88b;
     color: rgb(5, 5, 5);
     font-size: 18px;
     margin-left: 50px;

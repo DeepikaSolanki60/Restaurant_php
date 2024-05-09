@@ -7,14 +7,15 @@ if (isset($_POST['save_btn'])) {
     $cnumber = $_POST['cnumber'];
     $tableType = $_POST['tableType'];
     $arrivalDate = $_POST['arrivalDate'];
-    $query = "INSERT INTO booking(customerName,email,cnumber,tableType,arrivalDate) VALUES('$customerName','$email','$cnumber','$tableType','
-            $arrivalDate')";
+    $arrivaltime= $_POST['arrivaltime'];
+    $query = "INSERT INTO booking(customerName,email,cnumber,tableType,arrivalDate,arrivaltime) VALUES('$customerName','$email','$cnumber','$tableType','
+            $arrivalDate','')";
     $data = mysqli_query($con, $query);
     if ($data) {
         ?>
         <script type="text/javascript">
             alert("Data saved Successfully ");
-            window.open("http://localhost/Restaurant/index.php", "_self");
+           
         </script>
         <?php
     } else {
@@ -38,10 +39,10 @@ if (isset($_POST['save_btn'])) {
 
 <body>
     <div>
-        <h1>Booking</h1>
+        
         <div class="Main_container">
             <!------------------------ form form custmer ---------------------->
-            <form action="booking.php" method="Post">
+            <form action="#" method="Post">
                 <div class="container">
                     <!-- --------------booking from ---------------->
                     <label>
@@ -66,8 +67,12 @@ if (isset($_POST['save_btn'])) {
                     </label>
                     <label>
                         Date:
-                        <input type="taxt" placeholder="Enter your Date" name="arrivalDate" /><br />
+                        <input type="date" placeholder="Enter your Date" name="arrivalDate" /><br />
                     </label>
+                    <label>
+                        Time:
+                    </label> 
+                    <input type="time" name="arrivaltime"/>
                     <label>
                     <button type="submit" name="save_btn">Submit</button><br>
                     </label>

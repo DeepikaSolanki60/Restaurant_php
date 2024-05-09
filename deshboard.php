@@ -21,7 +21,7 @@
        float: left;
        overflow: hidden;
       }
-   
+    }
    
 
     </style>
@@ -34,12 +34,12 @@
                 
                     <h1>Restoran</h1>
                 
-                <a href="deshboard.php">
-                    <li onclick="loadPage('deshboard.php')">Home</li>
+                <a href="#">
+                    <li onclick="loadPage('home.php')">Home</li>
                 </a><br>
 
-                <a href="">
-                    <li onclick="loadPage('deshboard.php')">REGISTRATION</li>
+                <a href="#">
+                    <li onclick="loadPage('registration.php')">REGISTRATION</li>
                 </a><br>
                 <div class="dropdown">
                     <a href="#">
@@ -62,7 +62,7 @@
         </div>
 
         <div class="desh2">
-            <iframe id="iframe-content" width="100%" height="100%" frameborder="0"></iframe>
+            <iframe id="iframe-content"  width="100%" height="100%" frameborder="0"></iframe>
         </div>
         <script>
             function loadPage(url) {
