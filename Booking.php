@@ -9,7 +9,7 @@ if (isset($_POST['save_btn'])) {
     $arrivalDate = $_POST['arrivalDate'];
     $arrivaltime= $_POST['arrivaltime'];
     $query = "INSERT INTO booking(customerName,email,cnumber,tableType,arrivalDate,arrivaltime) VALUES('$customerName','$email','$cnumber','$tableType','
-            $arrivalDate','')";
+            $arrivalDate','$arrivaltime')";
     $data = mysqli_query($con, $query);
     if ($data) {
         ?>
@@ -47,32 +47,32 @@ if (isset($_POST['save_btn'])) {
                     <!-- --------------booking from ---------------->
                     <label>
                         Name:
-                        <input type="text" placeholder="Enter you Name" name="customerName" /><br>
+                        <input type="text" placeholder="Enter you Name" name="customerName"  required /><br>
                     </label>
                     <label>
                         Email:
-                        <input type="email" placeholder="Enter you Email" name="email" /><br />
+                        <input type="email" placeholder="Enter you Email" name="email" required /><br />
                     </label>
                     <label>
                         Number:
-                        <input type="text" placeholder="Enter you Number" name="cnumber" /><br />
+                        <input type="text" placeholder="Enter you Number" name="cnumber" required /><br />
                     </label>
                     <label>
                         table Details:
                         <select name="tableType">
                             <option>two people</option>
                             <option>three people</option>
-                            <option>Family </option>
+                            <option>Family </option> 
                         </select><br />
                     </label>
                     <label>
                         Date:
-                        <input type="date" placeholder="Enter your Date" name="arrivalDate" /><br />
+                        <input type="date" placeholder="Enter your Date" name="arrivalDate" required/><br />
                     </label>
                     <label>
                         Time:
                     </label> 
-                    <input type="time" name="arrivaltime"/>
+                    <input type="text" name="arrivaltime" required/>
                     <label>
                     <button type="submit" name="save_btn">Submit</button><br>
                     </label>

@@ -10,7 +10,7 @@
 
 <body>
     <h2>Item</h2>
-    <table border="1px" cellpadding="1opx" cellspacing="0">
+    <table border="1px" cellpadding="10px" cellspacing="0">
         <tbody>
             <tr>
                 <th>Item Name</th>

@@ -17,42 +17,45 @@
             width: 75%;
             margin: 5px;
             border: 2px solid red;
-            .dropdown{
-       float: left;
-       overflow: hidden;
-      }
-    }
-   
 
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div style="display:flex; width:100%; height:500px; ">
+    <div style="display:flex; width:100%; height:666px; ">
         <div class="desh1">
             <ul>
-                
-                    <h1>Restoran</h1>
-                
+
+                <h1>Restoran</h1>
+
                 <a href="#">
                     <li onclick="loadPage('home.php')">Home</li>
                 </a><br>
+                <div>
+                    <a href="#">
+                        <li onclick="loadPage('Booking.php')">Booking</li>
+                    </a><br>
+                    <a href="#">
+                        <li onclick="loadPage('showBooking.php')">Show Booking</li>
+                    </a><br>
 
-                <a href="#">
-                    <li onclick="loadPage('registration.php')">REGISTRATION</li>
-                </a><br>
+                </div>
                 <div class="dropdown">
                     <a href="#">
                         <button class="dropbtn">
                             <li>Item</li>
                         </button></a><br>
                     <div class="dropdown-content">
-                        <a href="add_item.php">Add item</a>
-                        <a href="show_item.php">show Item</a>
-                        
+                        <a href="#"><li onclick="loadPage('add_item.php')">Add Item</li></a>
+                        <a href="#"><li onclick="loadPage('show_item.php')">Show Item</li></a>
+
                     </div>
-                </div>
-                <br>
+               <div><br>
                 <a href="index.php">
                     <li onclick="checkdelete('index.php')">log out</li>
                 </a>
@@ -62,7 +65,7 @@
         </div>
 
         <div class="desh2">
-            <iframe id="iframe-content"  width="100%" height="100%" frameborder="0"></iframe>
+            <iframe id="iframe-content" width="100%" height="100%" frameborder="0"></iframe>
         </div>
         <script>
             function loadPage(url) {
