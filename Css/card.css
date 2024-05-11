@@ -1,13 +1,21 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+html{
+    font-size: 62.5;
 }
 .card{
     width: 20%;
     margin: 40px;
     border-radius: 5px;
+    box-sizing: 2px 2px 10px black;
     background-color: rgb(195, 93, 93);
 }
+
 .card_image img{
     width: 100%;
     border-top-left-radius: 5px;
@@ -15,9 +23,11 @@
 }
 .card_title{
     text-align: center;
+    padding: 5px;
 }
 .card_des{
     text-align: center;
+    padding: 4px;
 }
 button{
     margin-top: 30px;
@@ -26,7 +36,7 @@ button{
     border: 1px solid black;
     padding:5px ;
     border-radius: 5px;
-    
+    cursor: pointer;
 }
 button:hover{
     background-color: blueviolet;

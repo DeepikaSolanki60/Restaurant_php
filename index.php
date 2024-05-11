@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="Css/main.css" />
     <link rel="stylesheet" type="text/css" href="Css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="Css/about.css" />
-    <link rel="stylesheet" type="text/css" href="Css/card.css"/>
     <script src="javascript/slider.js"></script>
 
 </head>
@@ -34,24 +33,12 @@
 
 
                 <div class="rowslider">
-                    <img src="Images/photo1.jpg" width="100%" height="60%" style="margin-top: 5px;" alt="slider1.jpg"
+                    <img src="Images/photo1.jpg" width="100%" height="500px" style="margin-top: 5px;" alt="slider1.jpg"
                         id="slideimage">
                 </div>
                 <br><br>
                 <!-- ---------------------------------------card show---------- -->
-
-                <div class="card"> 
-                    <div class="card_image">
-                      <img src="Images/photo1.jpg"/>
-                    </div>
-                
-                <div class="card_title" >
-                <h1>title Name</h1>
-                </div>
-                <div class="card_des">
-                  <button>read More</button>
-                </div>
-                </div>
+                <?php include "card.php"; ?>
                 <!------------------- Footer ----------------------->
 
                 <div class="rowfooter">
