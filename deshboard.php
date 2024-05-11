@@ -65,7 +65,7 @@
         </div>
 
         <div class="desh2">
-            <iframe id="iframe-content" width="100%" height="100%" frameborder="0"></iframe>
+            <iframe id="iframe-content" width="100%" height="500px" frameborder="0"></iframe>
         </div>
         <script>
             function loadPage(url) {
