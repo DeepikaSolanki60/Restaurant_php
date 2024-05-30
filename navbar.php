@@ -26,7 +26,7 @@
                     <!------------------------ dropdown of pages button---------------------- -->
                     <div class="dropdown-content">
                         <a href="Booking.php">Booking</a>
-                        <a href="ourTime.php">Gallery</a>
+                        <a href="gallery.php">Gallery</a>
                         <a href="#">Time</a>
                     </div>
                 </div>

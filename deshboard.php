@@ -43,7 +43,9 @@
                     <a href="#">
                         <li onclick="loadPage('showBooking.php')">Show Booking</li>
                     </a><br>
-
+                    <a href="#">
+                        <li onclick="loadPage('Gallery.php')">Gallery</li>
+                    </a><br>
                 </div>
                 <div class="dropdown">
                     <a href="#">
