@@ -1,159 +1,49 @@
- 
- :root{
-      --clr-primary:#7380ec;
-      --clr-danger: #ff7782;
-      --clr-success:#41f16;
-      --clr-white:#fff;
-      --clr-info-dark:#7d8da1;
-      --clr-info-light:#dceaed;
-      --clr-dark:#363949;
-      --clr-warning:#ff4edc;
-      --clr-light:rgba(132,139,200,0.18);
-      --clr-primary-variant:#111e88;
-      --clr-dark-variant:#677483;
-      --clr-color_background:#f6f6f9;
-
-      --clr-border-redius: 2rem;
-      --border-redius-1: 0.4rem;
-      --border-redius-2: 0.8rem;
-      --border-redius-3: 1.2rem;
-
-      --card-padding:1.8rem;
-      --padding-1: 1.2rem;
-      --box-shedow: 0 2rem 3rem var(--clr-light);
-} 
-*{
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: 0;
-    list-style: none;
-    appearance: none;
 }
-body{
-    font-family: 'Courier New', Courier, monospace;
-    width: 100vw;
-    height: 100vh;
-    font-size: 0.88rem;
-    user-select: none;
-    overflow-x: hidden;
-    background-color:var(--clr-color_background);
+.desh1 {
+    background-color: rgb(6, 6, 6);
+    color: aliceblue;
+    width: 25%;
+    margin: 5px;
+    border: 2px solid red;
 }
-.container{
-    display: grid;
-    width: 96%;
-    gap: 1.8rem;
-    grid-template-columns: 14rem auto 14rem;
-    margin: 0 auto;
-} 
-a{
-    color:var(--clr-dark);
-}
-h1{
-    font-weight: 800;
-    font-size: 1.8rem;
-}
-h2{
-    font-size: 1.4rem;
 
+.desh2 {
+    background-color: wheat;
+    width: 75%;
+    margin: 5px;
+    border: 2px solid red;
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
 }
-h3{
-    font-size: 0.87rem;
+.desh1 ul{
+    list-style-type: none;
 }
-h4{
-    font-size: 0.8rem;
+.desh1 ul li{
+    padding: 10px;
 }
-h5{
-    font-size: 0.7rem;
+.desh1 ul li:hover{
+    background-color: red;
+    color: rgb(244, 239, 239);
 }
-small{
-    font-size: 0.75rem;
-}
-.profile.photo{
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.text.muted{
-    color: var(--clr-info-dark);
-}
-p{
-    color: var(--clr-dark-variant);
-}
-b{
-    color: var(--clr-dark);
-}
-.primary{
-    color: var(--clr-primary);
-}
-.success{
-    color: var(--clr-success);
-}
-.danger{
-    color: var(--clr-danger);
-}
-.warning{
-    color: var(--clr-warning);
-}
-/* ******************* aside**************************/
-aside{
-    height: 100vh;
-}
-aside .top{
-    background-color: var(--clr-white);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1.4rem;
-}
-aside .logo{
-    display: flex;
-    gap: 1rem;
-}
-aside.top div.close{
+.dropdown{
     display: none;
 }
-/* ***************************sidebar *************************************/
-aside.sidebar{
-    background-color:var(--clr-white);
-    display: flex;
-    flex-direction: column;
-    height: 85vh;
-    position: relative;
-    top: 1rem;
+.desh1 ul li:hover .dropdown {
+    display: block;
+    position: Absolute;
+    margin-left: -0.29cm;
+    margin-top: 0.27cm;
 }
-aside.h3{
-    font-weight: 500;
+.dropdown ul{
+    margin: 0;
+    padding: 0;
 }
-aside.sidebar a{
-    display: flex;
-    color:var(--clr-info-dark);
-    margin-left: 2rem;
-    gap: 1rem;
-    align-items: center;
-    height: 3.2rem;
-    transition: all 1.ls ease-in;
+.dropdown ul li{
+    display: block;
 }
-aside .sidebar a span{
-    font-size: 1.6rem;
-    transition: all .1s ease-in;
-}
-aside .sidebar a:last-child{
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-}
-aside .sidebar a.active{
-    background: var(--clr-light);
-    color: var(--clr-primary);
-    margin-left: 0;
-    border-left: 5px solid var(--clr-primary);
-}
- aside .sidebar a.active::before{
-    content: '';
-    width: 6px;
-    height: 100%;
-    background-color: var(--clr-primary);
- }
