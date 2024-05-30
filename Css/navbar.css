@@ -38,8 +38,9 @@
        background-color: rgb(233, 217, 217);
        font-family: inherit; /* Important for vertical align on mobile phones */
        margin: 0; /* Important for vertical align on mobile phones */
+       
    }
-   
+
    
    .menuheader a:hover, .dropdown:hover .dropbtn, .client:hover .clientbtn {
        background-color: #413a31;

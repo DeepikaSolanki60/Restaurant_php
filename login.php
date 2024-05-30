@@ -33,17 +33,19 @@
 <body>
 <div class="container">
     <h2>Login</h2>
+    <!----------------- form for login-------------- -->
     <form action="Login.php" method="post">
         
             <label>
-                <input type="text" placeholder="Enter you Name or Gmail " name=
-                "userName"/><br>
+                <input type="text" placeholder="Enter you Name or Gmail " name="userName"/><br>
+
                 <input  type="password" placeholder="password" name="password"/><br/>
                 <button type="submit" name="submit">login</button><br>
             </label>
             
         
     </form>
+     <!----------------- login form end -------------- -->
     </div>
 </body>
 </html>

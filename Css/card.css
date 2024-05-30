@@ -1,15 +1,18 @@
 *{
     margin: 0px;
     padding: 0px;
+   
     
 }
-/* html{
-    font-size: 62.5;
-} */
+body{
+    font-family: Arial;
+    
+}
 /*------------------------------------- main contaner---------------------------------  */
-main{
+.main{
+    
     display: inline-block;
-
+    
 }
 .card{
     width: 20%;
@@ -49,6 +52,6 @@ button{
 button:hover{
     background-color: rgb(5, 4, 5);
     color: white;
-    transition: 5s;
+    transition: .5s;
 }
 
