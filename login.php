@@ -40,7 +40,7 @@
                 <input type="text" placeholder="Enter you Name or Gmail " name="userName"/><br>
 
                 <input  type="password" placeholder="password" name="password"/><br/>
-                <button type="submit" name="submit">login</button><br>
+                <button  class="button" type="submit" name="submit">login</button><br>
             </label>
             
         

@@ -2,7 +2,7 @@
 <header>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" type="text/css" href="Css/navbar.css" />
-    <title>Spice Junction</title>
+    <title>Restautant</title>
 </header>
 
     <body>
@@ -26,7 +26,7 @@
                     <!------------------------ dropdown of pages button---------------------- -->
                     <div class="dropdown-content">
                         <a href="Booking.php">Booking</a>
-                        <a href="Gallery.php">Gallery</a>
+                        <a href="gallery.php">Gallery</a>
                         <a href="#">Time</a>
                     </div>
                 </div>

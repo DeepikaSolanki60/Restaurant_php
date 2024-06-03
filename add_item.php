@@ -40,6 +40,7 @@ if (isset($_POST['submit_btn'])) {
 <body>
   <div class="add-box">
     <form method="post" enctype="multipart/form-data">
+      
       <h1>Add Item</h1>
       <!-------------- add item form ----------->
       <label>Item Name</lebel>
@@ -62,7 +63,11 @@ if (isset($_POST['submit_btn'])) {
     </form>
   </div>
 
-
+  <a href="export.php">
+    <button type="button" name="button"> Export to Excel</button>
+    </a>
+    <hr>
+    
 </body>
 
 </html>

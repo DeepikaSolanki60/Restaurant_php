@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div style="display:flex; width:100%; height:666px; ">
+    <div style="display:flex; width:100%; height:685px; ">
         <div class="desh1">
             <ul>
                 <li onclick="loadPage('home.php')">Home</li>

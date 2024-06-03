@@ -1,8 +1,8 @@
-var images=["Images/photo1.jpg",
-"Images/photo2.webp",
-"Images/photo3.jpg",
+var images=["Images/photo1.jpeg",
+"Images/photo2.jpep",
+"Images/photo3.jpeg",
 "Images/photo4.jpeg",
-"Images/photo5.jpg"];
+"Images/photo5.jpeg"];
   var i=0;
   function slides()
   {
