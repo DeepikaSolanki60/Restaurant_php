@@ -2,11 +2,12 @@
 
 .menuheader{
     overflow: hidden;
-    background-color: #f5eeec;
+    background-color: #333;
     font-family: Arial;
     height:40px;
     margin-top: 5px;
     padding-left: 20px;
+    
 }
 
 /* Links inside the navbar */
@@ -19,6 +20,8 @@
     padding: 12px 14px;
     text-decoration: none;
 }
+
+
 
 /* The dropdown container */
 

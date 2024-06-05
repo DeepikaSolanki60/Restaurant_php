@@ -1,67 +1,42 @@
-<?php  include 'connection.php';?>
+<?php include 'connection.php'; ?>
+<?php
 
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/bill.css">
     <title>Bill</title>
+    <script>
+         function MyLoad(){
+            const cols=document.getElementsByTagName("input");
+            for (let index=0; index <cols.length; index++){
+                cols[index].addEventListener('change', function(){
+                    var ls_num = cols[index].name;
+                    Total(ls_no);
+                });
+            }
+         }
 
-    <style type="text/css">
-        .invoice-box{
-            max-width: 800px;
-            margin: auto;
-            padding: 30px;
-            border: 1px solid #eee;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            font-size: 16px;
-            line-height: 24px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .invoice-box table{
-            width: 100%;
-            line-height: inherit;
-            text-align: left;
-        }
-        .invoice-box table td{
-            padding: 5px;
-            vertical-align: top;
-        }
-        .invoice-box table tr td:nth-child(2){
-            text-align: right;
-        }
-        .invoice-box table tr.top table td{
-            padding-bottom: 20px;
-        }
-        .invoice-box table tr.information table td{
-            padding-bottom:40px ;
-        }
-        .invoice-box table tr.heading td{
-            background:#eee ;
-            border-bottom: 1px solid #ddd;
-            font-weight: bold;
-        }
-        .invoice-box table tr.details td{
-            padding-bottom: 20px ;
-        }
-        .invoice-box table tr.item td{
-            border-bottom: 1px solid #eee;
-        }
-        @media only screen and (max-width:600){
-            .invoice-box table tr.top table td{
-                width: 100%;
-                display: block;
-                text-align: center;
+
+   
+        function Total(ls_no) {
+            var base =document.getElementsByName(ls_no);
+
+            var ls_sum = 0;
+            for(let index =0; index <base.length; index++){
+                var ls_base = base[index].value;
+                ls_num =+ls_sum + +ls_base;
             }
-            .invoice-box table tr.information table td{
-                width: 100%;
-                display: block;
-                text-align: center;
-            }
+            document.getElementById(ls_no + "_tatal").value = ls_sum;
         }
-    </style>
+    </script>
 </head>
-<body>
+
+<body onload="MyLoad()">
     <div class="invoice-box">
         <table cellpadding="0" cellspacing="0">
             <tr class="top">
@@ -77,7 +52,7 @@
                             </td>
                         </tr>
                     </table>
-<!-- End the table -->
+                    <!-- End the table -->
                 </td>
             </tr>
             <tr class="information">
@@ -86,30 +61,45 @@
                     <table>
                         <tr>
                             <td>
-                                Eliterjhhjkjjhjkjkjhj<br>
-                                phone : 659879878689698<br>
+                                <label>
+                                    Name:
+                                    <input type="text" name="name_of_custember" /><br>
+                                </label>
+                                <label>
+                                    Email:
+                                    <input type="email" name="Email" /><br>
+                                </label>
+                                <label>
+                                    Number:
+                                    <input type="text" name="cMobaile_no" /><br>
+                                </label>
                             </td>
                             <td>
-                                wed devloper:jhjnkjhskjjnsjh<br>
-                                ahafnkjjijnnkjjnfjnmnajnvmn<br>
-                                Email:hgfhfajkhjkh@gmail.com
+                                <label>
+                                    Address
+                                    <input type="text" name="address" />
+                                </label>
                             </td>
                         </tr>
                     </table>
                     <!-- inner End -->
                 </td>
-            </tr >
+            </tr>
             <tr class="heading">
                 <td>
                     payment Method
                 </td>
-                <td>Check #</td>
+                <td><select name="payment_mode">
+                        <option>Cash</option>
+                        <option>Online</option>
+                        <option>Check</option>
+                    </select></td>
             </tr>
 
-            <tr class="details">
+            <!-- <tr class="details">
                 <td>Check</td>
                 <td>1000</td>
-            </tr>
+            </tr> -->
 
             <tr class="heading">
                 <td>item</td>
@@ -119,18 +109,24 @@
 
             <tr class="item">
                 <td>wedsite design</td>
-                <td>$000000</td>
+                <td><input type="text" name="col1"></td>
             </tr>
             <tr class="item">
                 <td>hosting</td>
-                <td>$000000</td>
+                <td><input type="text" name="col1"></td>
             </tr>
             <tr class="item">
                 <td>hosting</td>
-                <td>$000000</td>
+                <td><input type="text" name="col1"></td>
+            </tr>
+            <tr class="heading">
+                <td>
+                    Total Amount<input type="text" name="col1_total">
+                </td>
             </tr>
             
         </table>
     </div>
 </body>
+
 </html>

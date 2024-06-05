@@ -19,6 +19,7 @@
 
                 <li onclick="loadPage('Gallery.php')">Gallery</li>
 
+                <li onclick="loadPage('bill.php')">Bill</li>
                 <li>Item
 
                     <div class="dropdown">
@@ -26,6 +27,7 @@
                             <li onclick="loadPage('add_item.php')">Add Item</li>
 
                             <li onclick="loadPage('show_item.php')">Show Item</li>
+
                         </ul>
                     </div>
                 </li>

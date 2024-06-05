@@ -20,9 +20,9 @@
                 <th>Mobail Number</th>
                 <th>Table Details</th>
                 <th>Date</th>
-                <th>time</th>
-                <th>Bill</th>
-                <th>Print</th>
+                <th>Time</th>
+                <th>Cencel</th>
+                
             </tr>
            
             <?php
@@ -36,12 +36,11 @@ if ($result) {
                 <tr>
                     <td><?php echo $row['customerName']; ?></td>
                     <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['cnumber']; ?></td>
                     <td><?php echo $row['tableType']; ?></td>
                     <td><?php echo $row['arrivalDate']; ?></td>
-                    <td><?php echo $row['cnumber']; ?></td>
                     <td><?php echo $row['arrivaltime']; ?></td>
-                    <td><a href="bill.php?id=<?php echo $row['id'];?>">Bill</a></td>
-                       <td><a onclick="return confirm('Are you sure')" href="delete.php?id=<?php echo $row['id'];?>">Delete</a></td> 
+                    <td><input type="checkbox"></td>
                     </tr>
                 </tr>
             </tbody>
